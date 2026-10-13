@@ -1,1 +1,154 @@
+<html>
+<head>
+ 
+    <title>Jungle Safari Explorer</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        .jungle-slide {
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .rainforest-slide {
+            background: forestgreen;
+        }
+
+        .river-slide {
+            background: steelblue;
+        }
+
+        .night-slide {
+            background: midnightblue;
+        }
+
+        .section {
+            height: 500px;
+            padding: 80px 20px;
+        }
+
+        #rainforest {
+            background: #d4edda;
+        }
+
+        #river {
+            background: #d1ecf1;
+        }
+
+        #night {
+            background: #e2e3e5;
+        }
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#jungleNav" data-offset="60">
+
+
+    <div id="jungleCarousel" class="carousel slide" data-ride="carousel">
+
+        <ul class="carousel-indicators">
+            <li data-target="#jungleCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#jungleCarousel" data-slide-to="1"></li>
+            <li data-target="#jungleCarousel" data-slide-to="2"></li>
+        </ul>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="jungle-slide rainforest-slide">
+                   🌴 Rainforest Safari
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="jungle-slide river-slide">
+                    🌊 River Expedition
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="jungle-slide night-slide">
+                    🌌 Night Jungle Safari
+                </div>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#jungleCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#jungleCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+
+    <nav id="jungleNav" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Jungle Safari Explorer</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#rainforest">Rainforest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#river">River</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#night">Night</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="rainforest" class="section">
+        <div class="container">
+            <h2>🌴 Rainforest Safari</h2>
+            <p>
+                Explore the lush rainforest filled with exotic plants, towering trees, and amazing wildlife.
+            </p>
+        </div>
+    </section>
+
+    <section id="river" class="section">
+        <div class="container">
+            <h2>🌊 River Expedition</h2>
+            <p>
+                Discover winding jungle rivers where crocodiles, fish, and tropical birds thrive.
+            </p>
+        </div>
+    </section>
+
+    <section id="night" class="section">
+        <div class="container">
+            <h2>🌌 Night Jungle Safari</h2>
+            <p>
+                Experience the jungle after sunset, where nocturnal animals and glowing insects come alive.
+            </p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
